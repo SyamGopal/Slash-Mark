@@ -1,0 +1,132 @@
+/* Your CSS styles with improved alignment, colors, and animations */
+
+/* Import Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #82caff, #3e64ff);
+}
+
+header {
+    background: #0c2461;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Weather input section */
+.weather-input {
+    text-align: center;
+}
+
+.weather-input input,
+.weather-input button {
+    height: 40px;
+    width: 250px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.weather-input input {
+    padding: 0 15px;
+}
+
+.weather-input .search-btn {
+    background: #00adb5;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.weather-input .search-btn:hover {
+    background: #007e8a;
+}
+
+.weather-input .location-btn {
+    background: #393e46;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.weather-input .location-btn:hover {
+    background: #222831;
+}
+
+.separator {
+    color: #fff;
+    font-weight: bold;
+}
+
+.separator::before {
+    content: "or";
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Weather data section */
+.weather-data {
+    background: #393e46;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.current-weather,
+.days-forecast {
+    margin-bottom: 20px;
+}
+
+.current-weather .details,
+.weather-cards .card {
+    padding: 15px;
+    border-radius: 8px;
+    background: #222831;
+    margin-bottom: 10px;
+}
+
+.current-weather h2,
+.days-forecast h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.weather-cards .card {
+    display: flex;
+    align-items: center;
+}
+
+.weather-cards .card img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .weather-input input,
+    .weather-input button {
+        width: 200px;
+    }
+}
